@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 248 225; /* Soft honey-cream */
+    --foreground: 33 33 33;
+
+    --card: 255 253 245;
+    --card-foreground: 33 33 33;
+
+    --popover: 255 255 255;
+    --popover-foreground: 33 33 33;
+
+    --primary: 255 193 7;
+    --primary-foreground: 33 33 33;
+
+    --secondary: 245 240 230;
+    --secondary-foreground: 33 33 33;
+
+    --muted: 237 237 237;
+    --muted-foreground: 92 64 51;
+
+    --accent: 245 240 230;
+    --accent-foreground: 33 33 33;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 237 237 237;
+    --input: 255 255 255;
+    --ring: 255 193 7;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 255 250 240;
+    --sidebar-foreground: 33 33 33;
+    --sidebar-primary: 255 193 7;
+    --sidebar-primary-foreground: 33 33 33;
+    --sidebar-accent: 255 240 200;
+    --sidebar-accent-foreground: 33 33 33;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair text-charcoal;
+  }
+}
+
+@layer components {
+  .honey-gradient {
+    background: linear-gradient(135deg, #FFC107 0%, #FFD54F 100%);
+  }
+
+  .forest-gradient {
+    background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%);
+  }
+
+  .warm-brown-gradient {
+    background: linear-gradient(135deg, #5C4033 0%, #6D4C36 100%);
+  }
+
+  .light-cream-gradient {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5F0E6 100%);
+  }
+
+  .honey-cream {
+    background-color: #FFF8E1;
+  }
+}
